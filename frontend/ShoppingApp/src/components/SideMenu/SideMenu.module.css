@@ -1,0 +1,30 @@
+@reference "tailwindcss";
+
+/* Wrapper (main sidebar container) */
+.side-menu {
+  @apply relative flex h-[calc(100vh-20rem)] w-full max-w-[20rem]
+          flex-col rounded-xl bg-white bg-clip-border p-4
+          text-gray-700 shadow-xl shadow-blue-900/5;
+}
+
+/* Header container */
+.side-menu-header {
+  @apply mr-4 place-items-center p-4 flex;
+}
+
+/* Header title */
+.side-menu-title {
+  @apply block font-sans text-xl antialiased font-semibold leading-snug 
+          tracking-normal text-blue-900 pl-4;
+}
+
+/* Header icon */
+.side-menu-icon {
+  @apply w-7 h-7;
+}
+
+/* Navigation container */
+.side-menu-nav {
+  @apply flex min-w-[240px] flex-col gap-1 p-2
+          font-sans text-base font-normal text-blue-700;
+}
