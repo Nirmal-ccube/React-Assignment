@@ -2,9 +2,9 @@
 
 /* Wrapper (main sidebar container) */
 .side-menu {
-  @apply relative flex h-[calc(100vh-20rem)] w-full max-w-[20rem]
-          flex-col rounded-xl bg-white bg-clip-border p-4
-          text-gray-700 shadow-xl shadow-blue-900/5;
+  @apply relative flex h-screen w-full max-w-[20rem]
+          flex-col rounded-xl bg-gray-300 bg-clip-border p-4 m-1
+          text-gray-700 shadow-xl shadow-blue-900/5 pt-10;
 }
 
 /* Header container */

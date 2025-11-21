@@ -1,3 +1,5 @@
+import Home from "./components/Home/Home";
+import Header from "./components/Header/Header";
 import SideMenu from "./components/SideMenu/SideMenu";
 import { useState } from "react";
 
@@ -20,9 +22,13 @@ function App() {
 
   return (
     <>
-      <div className="min-h-screen flex bg-gray-50">
+    <div className="flex flex-col">
+
+      
+
+      <div className="min-h-screen flex bg-gray-50 w-full">
         <SideMenu isOpen={open} selectedTab={selectedMenu} onMenuTap={onMenuSelected} />
-        <main >
+        <main className="flex-1">
             {/*<button
               onClick={() => openMenuTap()}
               className="mb-4 px-4 py-2 bg-indigo-600 text-white rounded"
@@ -30,10 +36,14 @@ function App() {
               {open ? "Hide Menu" : "Show Menu"}
             </button>*/}
 
-            <h1 className="text-3xl font-bold">Shopping App</h1>  
+            <Header/>
+
+            <Home /> 
         </main>
         
       </div>
+    </div>
+      
     </>
   )
 }
