@@ -1,0 +1,17 @@
+@reference "tailwindcss";
+
+.scrollbar-hide {
+  /* Tailwind-style utility shell */
+  @apply overflow-auto;
+
+  /* Hide scrollbar (Chrome, Safari, Opera) */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar (Firefox, Edge, IE) */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;    /* Firefox */
+}
